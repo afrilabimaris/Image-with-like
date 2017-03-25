@@ -3,16 +3,14 @@
 <head>
   <title>My Portofolio</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <style>
-  .affix {
-      top: 10px;
-  }
-  </style>
+
+ 
  </head>
  <body>
 <div class="container-fluid" style="background-color:#2196F3;color:#fff;height:100px;padding: 20px 20px;">
@@ -42,9 +40,8 @@
 			<div class="col-sm-3">
 				<p><strong>Christ redeemer: Rio de Jeneiro,Brazil</strong></p>
 				<img src="world/rio.jpg" alt="Christ redeemer: Rio de Jeneiro,Brazil" width="200px" height="200px">
-			<a href="#"><span class="badge">2.903</span></a>
-			<img onclick="document.getElementById('myLike1').src='foto/red.png'" id="myLike1" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
+			<span id="demo1" class="badge">2903</span>
+			<img type="button" onclick="myFunction(1)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
 			<a href="#"><span class="badge">780</span></a>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
@@ -58,10 +55,9 @@
 			<div class="col-sm-3">
 				<p><strong>Great Wall of China,China</strong></p>
 				<img src="world/greatwall.jpg" alt="Great Wall of China,China" width="200px" height="200px">
-			<a href="#"><span class="badge">3.203</span></a>
-			<img onclick="document.getElementById('myLike2').src='foto/red.png'" id="myLike2" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
-			<a href="#"><span class="badge">1.080</span></a>
+			<span id="demo2" class="badge">2903</span>
+			<img type="button" onclick="myFunction(2)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
+			<span class="badge">1.080</span>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
 			<div class="col-sm-9">
@@ -74,9 +70,8 @@
 			<div class="col-sm-3">
 				<p><strong>Machu Pichu: Peru</strong></p>
 				<img src="world/machupichu.jpg" alt="Machu Pichu: Peru" width="200px" height="200px">
-			<a href="#"><span class="badge">3.203</span></a>
-			<img onclick="document.getElementById('myLike3').src='foto/red.png'" id="myLike3" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
+			<span id="demo3" class="badge">2903</span>
+			<img type="button" onclick="myFunction(3)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
 			<a href="#"><span class="badge">1.080</span></a>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
@@ -90,9 +85,8 @@
 			<div class="col-sm-3">
 				<p><strong>Petra, Jordan</strong></p>
 				<img src="world/petra.jpg" alt="Petra, Jordan" width="200px" height="200px">
-			<a href="#"><span class="badge">3.203</span></a>
-			<img onclick="document.getElementById('myLike4').src='foto/red.png'" id="myLike4" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
+			<span id="demo4" class="badge">2903</span>
+			<img type="button" onclick="myFunction(4)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
 			<a href="#"><span class="badge">1.080</span></a>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
@@ -106,9 +100,8 @@
 			<div class="col-sm-3">
 				<p><strong>Pyramid at Chichen itza: Yucatan Peninsula, Mexico</strong></p>
 				<img src="world/itza.jpg" alt="Pyramid at Chichen itza: Yucatan Peninsula, Mexico" width="200px" height="200px">
-			<a href="#"><span class="badge">3.203</span></a>
-			<img onclick="document.getElementById('myLike5').src='foto/red.png'" id="myLike5" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
+			<span id="demo5" class="badge">2903</span>
+			<img type="button" onclick="myFunction(5)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
 			<a href="#"><span class="badge">1.080</span></a>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
@@ -122,9 +115,8 @@
 			<div class="col-sm-3">
 				<p><strong>Roman Colosseum: Rome, Italy</strong></p>
 				<img src="world/rame.jpg" alt="Roman Colosseum: Rome, Italy" width="200px" height="200px">
-			<a href="#"><span class="badge">2.903</span></a>
-			<img onclick="document.getElementById('myLike6').src='foto/red.png'" id="myLike6" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
+			<span id="demo6" class="badge">2903</span>
+			<img type="button" onclick="myFunction(6)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
 			<a href="#"><span class="badge">780</span></a>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
@@ -138,9 +130,8 @@
 			<div class="col-sm-3">
 				<p><strong>Taj Mahal: Agra, India</strong></p>
 				<img src="world/tajmahal.jpg" alt="Taj Mahal: Agra, India" width="200px" height="200px">
-			<a href="#"><span class="badge">3.203</span></a>
-			<img onclick="document.getElementById('myLike7').src='foto/red.png'" id="myLike7" 
-			src="foto/heart.png" alt="like" width="30px" height="30px">
+			<span id="demo7" class="badge">2903</span>
+			<img type="button" onclick="myFunction(7)" data-count="2903" src="foto/black.png" alt="like" width="30px" height="30px" >
 			<a href="#"><span class="badge">1.080</span></a>
 			<a href="#comment"><img src="foto/comment.png" alt="comment" width="30px" height="30px"></a>
 			</div>
@@ -150,10 +141,11 @@
 			</div>
 		</div>
 	</div>
-	<footer class="container-fluid text-center" style="background-color:#2196F3;color:#fff;margin:10px;height:50px;">
-  <h3>The Incredible World</h3>
+	<footer class="container-fluid text-center">
+  <h4>The Incredible World</h4>
 </footer>
 </div>
 
+<script src="main.js"></script>
  </body>
  </html>

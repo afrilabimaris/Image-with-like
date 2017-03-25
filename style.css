@@ -1,0 +1,10 @@
+	footer	{
+		background-color: #2196F3;
+		color: #fff;
+		height: 40px;
+		border: 2px solid #9d9da0;
+		border-radius: 3px;
+	}
+  .affix {
+      top: 10px;
+  }
